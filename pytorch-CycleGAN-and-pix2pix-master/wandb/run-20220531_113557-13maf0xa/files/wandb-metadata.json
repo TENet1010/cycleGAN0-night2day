@@ -1,0 +1,27 @@
+{
+    "os": "Linux-5.4.188+-x86_64-with-Ubuntu-18.04-bionic",
+    "python": "3.7.13",
+    "heartbeatAt": "2022-05-31T11:36:01.683510",
+    "startedAt": "2022-05-31T11:35:57.726694",
+    "docker": null,
+    "gpu": "Tesla P100-PCIE-16GB",
+    "gpu_count": 1,
+    "cpu_count": 2,
+    "cuda": null,
+    "args": [
+        "--dataroot",
+        "./datasets/data_v2/testA",
+        "--name",
+        "night2dayV2",
+        "--model",
+        "test",
+        "--no_dropout",
+        "--use_wandb"
+    ],
+    "state": "running",
+    "program": "test.py",
+    "codePath": "test.py",
+    "host": "03866d420abc",
+    "username": "root",
+    "executable": "/usr/bin/python3"
+}

@@ -1,0 +1,19 @@
+create web directory ./checkpoints/night2day/web...
+learning rate 0.0002000 -> 0.0002000
+/usr/local/lib/python3.7/dist-packages/torch/optim/lr_scheduler.py:136: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  "https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate", UserWarning)
+/usr/local/lib/python3.7/dist-packages/torch/utils/data/dataloader.py:490: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+(epoch: 1, iters: 100, time: 0.511, data: 0.322) D_A: 0.240 G_A: 0.457 cycle_A: 2.802 idt_A: 1.593 D_B: 0.350 G_B: 0.541 cycle_B: 3.086 idt_B: 1.421
+Traceback (most recent call last):
+  File "train.py", line 52, in <module>
+    model.optimize_parameters()   # calculate loss functions, get gradients, update network weights
+  File "/content/drive/MyDrive/cycleGAN/pytorch-CycleGAN-and-pix2pix-master/models/cycle_gan_model.py", line 187, in optimize_parameters
+    self.backward_G()             # calculate gradients for G_A and G_B
+  File "/content/drive/MyDrive/cycleGAN/pytorch-CycleGAN-and-pix2pix-master/models/cycle_gan_model.py", line 178, in backward_G
+    self.loss_G.backward()
+  File "/usr/local/lib/python3.7/dist-packages/torch/_tensor.py", line 363, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/usr/local/lib/python3.7/dist-packages/torch/autograd/__init__.py", line 175, in backward
+    allow_unreachable=True, accumulate_grad=True)  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

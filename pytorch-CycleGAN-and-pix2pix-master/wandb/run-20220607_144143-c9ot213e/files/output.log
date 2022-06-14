@@ -1,0 +1,36 @@
+create web directory ./checkpoints/night2day512/web...
+learning rate 0.0002000 -> 0.0002000
+/usr/local/lib/python3.7/dist-packages/torch/optim/lr_scheduler.py:136: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  "https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate", UserWarning)
+Traceback (most recent call last):
+  File "train.py", line 44, in <module>
+    for i, data in enumerate(dataset):  # inner loop within one epoch
+  File "/content/drive/MyDrive/cycleGAN/pytorch-CycleGAN-and-pix2pix-master/data/__init__.py", line 90, in __iter__
+    for i, data in enumerate(self.dataloader):
+  File "/usr/local/lib/python3.7/dist-packages/torch/utils/data/dataloader.py", line 530, in __next__
+    data = self._next_data()
+  File "/usr/local/lib/python3.7/dist-packages/torch/utils/data/dataloader.py", line 1224, in _next_data
+    return self._process_data(data)
+  File "/usr/local/lib/python3.7/dist-packages/torch/utils/data/dataloader.py", line 1250, in _process_data
+    data.reraise()
+  File "/usr/local/lib/python3.7/dist-packages/torch/_utils.py", line 457, in reraise
+    raise exception
+ValueError: Caught ValueError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/torch/utils/data/_utils/worker.py", line 287, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/usr/local/lib/python3.7/dist-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/usr/local/lib/python3.7/dist-packages/torch/utils/data/_utils/fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/content/drive/MyDrive/cycleGAN/pytorch-CycleGAN-and-pix2pix-master/data/unaligned_dataset.py", line 60, in __getitem__
+    A = self.transform_A(A_img)
+  File "/usr/local/lib/python3.7/dist-packages/torchvision/transforms/transforms.py", line 95, in __call__
+    img = t(img)
+  File "/usr/local/lib/python3.7/dist-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/torchvision/transforms/transforms.py", line 676, in forward
+    i, j, h, w = self.get_params(img, self.size)
+  File "/usr/local/lib/python3.7/dist-packages/torchvision/transforms/transforms.py", line 635, in get_params
+    raise ValueError(f"Required crop size {(th, tw)} is larger then input image size {(h, w)}")
+ValueError: Required crop size (512, 512) is larger then input image size (286, 286)

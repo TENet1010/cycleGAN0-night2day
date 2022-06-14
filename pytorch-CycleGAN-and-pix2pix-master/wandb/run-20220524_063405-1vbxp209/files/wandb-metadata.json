@@ -1,0 +1,26 @@
+{
+    "os": "Linux-5.4.188+-x86_64-with-Ubuntu-18.04-bionic",
+    "python": "3.7.13",
+    "heartbeatAt": "2022-05-24T06:34:09.021660",
+    "startedAt": "2022-05-24T06:34:05.437537",
+    "docker": null,
+    "gpu": "Tesla P100-PCIE-16GB",
+    "gpu_count": 1,
+    "cpu_count": 2,
+    "cuda": null,
+    "args": [
+        "--dataroot",
+        "./datasets/img_1200day-night",
+        "--name",
+        "night2day",
+        "--model",
+        "cycle_gan",
+        "--use_wandb"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "train.py",
+    "host": "93a537600897",
+    "username": "root",
+    "executable": "/usr/bin/python3"
+}

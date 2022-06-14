@@ -1,0 +1,33 @@
+{
+    "os": "Linux-5.4.188+-x86_64-with-Ubuntu-18.04-bionic",
+    "python": "3.7.13",
+    "heartbeatAt": "2022-05-27T09:48:37.005406",
+    "startedAt": "2022-05-27T09:48:32.790359",
+    "docker": null,
+    "gpu": "Tesla P100-PCIE-16GB",
+    "gpu_count": 1,
+    "cpu_count": 2,
+    "cuda": null,
+    "args": [
+        "--dataroot",
+        "./datasets/data_v2",
+        "--name",
+        "night2dayV2",
+        "--model",
+        "cycle_gan",
+        "--use_wandb",
+        "--n_epochs",
+        "20",
+        "--n_epochs_decay",
+        "20",
+        "--epoch_count",
+        "20",
+        "--continue_train"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "train.py",
+    "host": "13dd6bc2c0c5",
+    "username": "root",
+    "executable": "/usr/bin/python3"
+}

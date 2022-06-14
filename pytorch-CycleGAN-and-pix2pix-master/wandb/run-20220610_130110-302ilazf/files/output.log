@@ -1,0 +1,46 @@
+/usr/local/lib/python3.7/dist-packages/torch/optim/lr_scheduler.py:136: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  "https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate", UserWarning)
+/usr/local/lib/python3.7/dist-packages/torch/utils/data/dataloader.py:490: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+create web directory ./checkpoints/night2dayV2/web...
+learning rate 0.0002000 -> 0.0002000
+(epoch: 1, iters: 100, time: 1.993, data: 1.509) D_A: 0.279 G_A: 0.253 cycle_A: 3.238 idt_A: 0.631 D_B: 0.329 G_B: 0.317 cycle_B: 1.681 idt_B: 1.494
+(epoch: 1, iters: 200, time: 1.990, data: 0.003) D_A: 0.171 G_A: 0.373 cycle_A: 2.183 idt_A: 1.029 D_B: 0.203 G_B: 0.314 cycle_B: 2.289 idt_B: 1.098
+(epoch: 1, iters: 300, time: 1.990, data: 0.005) D_A: 0.235 G_A: 0.891 cycle_A: 2.807 idt_A: 0.571 D_B: 0.225 G_B: 0.598 cycle_B: 1.187 idt_B: 1.204
+(epoch: 1, iters: 400, time: 10.368, data: 0.003) D_A: 0.112 G_A: 0.469 cycle_A: 1.342 idt_A: 0.419 D_B: 0.242 G_B: 0.372 cycle_B: 0.860 idt_B: 0.720
+(epoch: 1, iters: 500, time: 1.990, data: 0.005) D_A: 0.183 G_A: 0.290 cycle_A: 2.025 idt_A: 0.437 D_B: 0.205 G_B: 0.335 cycle_B: 1.158 idt_B: 0.771
+(epoch: 1, iters: 600, time: 1.998, data: 0.003) D_A: 0.140 G_A: 0.316 cycle_A: 3.000 idt_A: 0.657 D_B: 0.263 G_B: 0.499 cycle_B: 2.006 idt_B: 1.635
+(epoch: 1, iters: 700, time: 1.993, data: 0.003) D_A: 0.187 G_A: 0.279 cycle_A: 1.883 idt_A: 0.572 D_B: 0.246 G_B: 0.418 cycle_B: 1.441 idt_B: 0.931
+(epoch: 1, iters: 800, time: 3.476, data: 0.003) D_A: 0.290 G_A: 0.296 cycle_A: 1.599 idt_A: 0.460 D_B: 0.234 G_B: 0.424 cycle_B: 1.226 idt_B: 0.674
+(epoch: 1, iters: 900, time: 1.991, data: 0.014) D_A: 0.216 G_A: 0.762 cycle_A: 2.265 idt_A: 1.193 D_B: 0.097 G_B: 0.386 cycle_B: 2.796 idt_B: 0.993
+(epoch: 1, iters: 1000, time: 1.996, data: 0.003) D_A: 0.304 G_A: 0.407 cycle_A: 2.566 idt_A: 0.710 D_B: 0.292 G_B: 0.639 cycle_B: 1.436 idt_B: 1.202
+(epoch: 1, iters: 1100, time: 1.994, data: 0.004) D_A: 0.221 G_A: 0.458 cycle_A: 1.922 idt_A: 0.733 D_B: 0.140 G_B: 0.359 cycle_B: 1.326 idt_B: 0.784
+(epoch: 1, iters: 1200, time: 3.551, data: 0.003) D_A: 0.158 G_A: 0.599 cycle_A: 0.910 idt_A: 0.761 D_B: 0.217 G_B: 0.349 cycle_B: 1.357 idt_B: 0.406
+(epoch: 1, iters: 1300, time: 1.992, data: 0.007) D_A: 0.138 G_A: 0.528 cycle_A: 1.659 idt_A: 0.402 D_B: 0.121 G_B: 0.598 cycle_B: 0.979 idt_B: 0.719
+(epoch: 1, iters: 1400, time: 1.995, data: 0.003) D_A: 0.226 G_A: 0.857 cycle_A: 2.587 idt_A: 0.416 D_B: 0.186 G_B: 0.607 cycle_B: 1.012 idt_B: 1.006
+(epoch: 1, iters: 1500, time: 1.999, data: 0.003) D_A: 0.324 G_A: 0.346 cycle_A: 1.165 idt_A: 0.718 D_B: 0.317 G_B: 0.286 cycle_B: 1.380 idt_B: 0.666
+(epoch: 1, iters: 1600, time: 3.629, data: 0.003) D_A: 0.233 G_A: 0.481 cycle_A: 1.448 idt_A: 0.843 D_B: 0.341 G_B: 0.250 cycle_B: 1.539 idt_B: 0.745
+(epoch: 1, iters: 1700, time: 1.987, data: 0.017) D_A: 0.187 G_A: 0.403 cycle_A: 1.306 idt_A: 0.679 D_B: 0.117 G_B: 0.917 cycle_B: 1.521 idt_B: 0.546
+(epoch: 1, iters: 1800, time: 1.985, data: 0.005) D_A: 0.155 G_A: 0.327 cycle_A: 2.693 idt_A: 0.371 D_B: 0.537 G_B: 0.965 cycle_B: 0.806 idt_B: 1.812
+(epoch: 1, iters: 1900, time: 1.994, data: 0.003) D_A: 0.113 G_A: 0.396 cycle_A: 1.436 idt_A: 1.061 D_B: 0.088 G_B: 0.648 cycle_B: 1.949 idt_B: 0.648
+(epoch: 1, iters: 2000, time: 4.833, data: 0.003) D_A: 0.069 G_A: 0.589 cycle_A: 1.295 idt_A: 0.268 D_B: 0.186 G_B: 0.460 cycle_B: 1.011 idt_B: 0.648
+(epoch: 1, iters: 2100, time: 1.999, data: 0.010) D_A: 0.248 G_A: 0.326 cycle_A: 2.131 idt_A: 0.432 D_B: 0.246 G_B: 0.530 cycle_B: 0.930 idt_B: 0.966
+(epoch: 1, iters: 2200, time: 1.994, data: 0.003) D_A: 0.114 G_A: 0.823 cycle_A: 2.256 idt_A: 0.249 D_B: 0.064 G_B: 0.771 cycle_B: 0.572 idt_B: 0.908
+(epoch: 1, iters: 2300, time: 1.997, data: 0.003) D_A: 0.060 G_A: 0.495 cycle_A: 2.336 idt_A: 0.350 D_B: 0.047 G_B: 0.800 cycle_B: 1.016 idt_B: 1.176
+(epoch: 1, iters: 2400, time: 3.775, data: 0.003) D_A: 0.119 G_A: 0.874 cycle_A: 1.051 idt_A: 0.398 D_B: 0.168 G_B: 1.131 cycle_B: 0.940 idt_B: 0.467
+(epoch: 1, iters: 2500, time: 1.994, data: 0.004) D_A: 0.159 G_A: 0.434 cycle_A: 1.411 idt_A: 0.400 D_B: 0.150 G_B: 0.417 cycle_B: 0.723 idt_B: 0.631
+End of epoch 1 / 120 	 Time Taken: 4722 sec
+learning rate 0.0002000 -> 0.0002000
+(epoch: 2, iters: 100, time: 2.000, data: 1.208) D_A: 0.073 G_A: 0.751 cycle_A: 1.035 idt_A: 0.369 D_B: 0.134 G_B: 0.573 cycle_B: 0.808 idt_B: 0.562
+Traceback (most recent call last):
+  File "train.py", line 52, in <module>
+    model.optimize_parameters()   # calculate loss functions, get gradients, update network weights
+  File "/content/drive/MyDrive/cycleGAN/pytorch-CycleGAN-and-pix2pix-master/models/cycle_gan_model.py", line 187, in optimize_parameters
+    self.backward_G()             # calculate gradients for G_A and G_B
+  File "/content/drive/MyDrive/cycleGAN/pytorch-CycleGAN-and-pix2pix-master/models/cycle_gan_model.py", line 178, in backward_G
+    self.loss_G.backward()
+  File "/usr/local/lib/python3.7/dist-packages/torch/_tensor.py", line 363, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/usr/local/lib/python3.7/dist-packages/torch/autograd/__init__.py", line 175, in backward
+    allow_unreachable=True, accumulate_grad=True)  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
